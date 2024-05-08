@@ -14,6 +14,12 @@ fips_begin_app(clear-sapp-ui windowed)
 fips_end_app()
 
 fips_ide_group(Samples)
+fips_begin_app(math-sapp windowed)
+    fips_files(math-sapp.cc)
+    fips_deps(sokol imgui)
+fips_end_app()
+
+fips_ide_group(Samples)
 fips_begin_app(triangle-sapp windowed)
     fips_files(triangle-sapp.c)
     sokol_shader(triangle-sapp.glsl ${slang})
